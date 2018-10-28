@@ -1,0 +1,136 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+/*FOOTER************************************************************************************************/
+
+.slider__image-1 {
+    outline: none;
+}
+
+/*SLIDER************************************************************************************************/
+
+.search-form {
+    margin-left: 3333px;
+    outline: none;
+}
+
+.search-bar {
+    margin: 0 auto;
+    width: 520px;
+}
+
+.search-bar form input {
+    border: none;
+    font-size: 30px;
+    width: 500px;
+    height: 50px;
+    border-radius: 25px;
+    opacity: 0.5; 
+    border: 2px solid #0057A4;
+    outline: none;
+    padding-left: 30px;
+}
+
+/*SEARCH-BAR************************************************************************************************/
+
+.range-slider {
+    margin: 0 auto;
+    width: 300px;
+    margin-top: 50px;
+}
+
+.range-slider__input {
+    width: 300px;
+}
+
+main {
+    min-height: 500px;
+}
+
+/*SELLING-GOOD*************************************************************************************************/
+
+
+
+.main-slider:active {
+    border: none;
+}
+
+.main-slider button:hover {
+    background: none;
+}
+
+.slick-slide img {
+    border: none !important;    
+}
+
+.slick-slide img:active {
+    border: none !important;    
+}
+
+.slick-next:before {
+    content: url('./assets/slider/slider-arrows/arrow-next.svg') !important;
+}
+
+.slick-prev:before {
+    content: url('./assets/slider/slider-arrows/arrow-next.svg') !important;
+}
+
+.slick-prev {
+    transform: rotate(180deg) !important;
+    margin-top: -7px;
+}
+
+.footer {
+    min-height: 500px;
+    background: #373535;
+}
+
+.footer__info {
+    display: flex;
+
+}
+
+.footer__info h2 {
+    color: #ffffff;
+}
+
+.footer__info ul:first-child {
+    margin-left: 50px;
+}
+
+.footer__info ul li {
+    list-style-type: none;
+    color: grey;
+    padding: 5px;
+}
+
+.footer__info ul li a {
+    list-style-type: none;
+    color: grey;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.footer__info ul li a:hover {
+    color: #ffffff;
+}
+
+.feedback {
+    margin-top: 50px;
+    margin-left: 120px;
+    color: #ffffff;
+}
+
+.feedback .telephone {
+    text-decoration: none;
+    font-size: 33px;
+    color: #ffffff;
+}
