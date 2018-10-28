@@ -12,9 +12,9 @@ import { BrowserRouter } from 'react-router-dom';
 import WrappedApp from './hoc/WrappedApp';
 import WrappedSellingItems from './hoc/WrappedSellingItems';
 
-const createStoreWithMiddleware = applyMiddleware()(createStore);
 const WrapperApp = WrappedApp(App);
 const WrapperdSellingItems = WrappedSellingItems();
+const createStoreWithMiddleware = applyMiddleware()(createStore);
 
 render (
     <Provider store={createStoreWithMiddleware(reducers)}>
@@ -25,12 +25,14 @@ render (
 
                 <WrapperdSellingItems 
                     route = '/drinks'
-                    state = { DrinksState() } />
+                    state = { DrinksState() }/>
 
                 <WrapperdSellingItems 
                     route = '/combo'
-                    state = { ComboState()} />
+                    state = { ComboState() }/>
             </div>
         </BrowserRouter>
     </Provider>, 
 document.getElementById('root'));
+
+//

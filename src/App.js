@@ -10,16 +10,15 @@ class App extends Component {
   state = PizzaState();
 
   inputChangeHandler = (event) => {
-    this.setState({searchInput: event.target.value});
+    this.setState({ searchInput: event.target.value });
   };
 
   rangeSliderHandler = (event) => {
-    this.setState({priceRange: event.target.value});
+    this.setState({ priceRange: event.target.value });
   };
 
   addPizzaToCart = (price) => {
     this.cart.updateState(price);
-    console.log(price);
   };
 
   render() {
@@ -27,15 +26,17 @@ class App extends Component {
       <div>
         <MainSlider />
         <SearchBar
-          changed = {this.inputChangeHandler}
-          addPizzaToCart = {this.addItemHandler} 
-          searchInput = {this.state.searchInput}/>  
+          changed = { this.inputChangeHandler }
+          addPizzaToCart = { this.addItemHandler } 
+          searchInput = { this.state.searchInput }/>  
         <RangeSlider 
-          currentPrice = {this.priceRange}
-          shifted = {this.rangeSliderHandler}/>  
-        <SellingItems
-          state = {this.state}
-          addPizzaToCart = {this.addPizzaToCart}/>          
+          currentPrice = { this.priceRange }
+          shifted = { this.rangeSliderHandler }/>  
+        <div className = 'container'>
+          <SellingItems
+          state = { this.state}
+          addPizzaToCart = { this.addPizzaToCart }/>  
+        </div>
       </div>
     );
   }

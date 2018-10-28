@@ -10,3 +10,5 @@ const SearchBar = (props) => {
 } 
 
 export default SearchBar;
+
+// Functional component that shows an item depending on the user's request. Data comes from App.js

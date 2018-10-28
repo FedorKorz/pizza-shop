@@ -26,7 +26,7 @@ const SellingItems = (props) => {
                         consists = {currentPizza.consists}
                         addPizzaToCart = {props.addPizzaToCart}
                         availableSize = {currentPizza.availableSize}
-                        nutritionalValue = {currentPizza.nutritionalValue}/>      
+                        nutritionalValue = {currentPizza.nutritionalValue} />  
                 </div>
             )
         };

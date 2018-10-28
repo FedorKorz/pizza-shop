@@ -1,0 +1,9 @@
+.range-slider {
+    margin: 0 auto;
+    width: 300px;
+    margin-top: 50px;
+}
+
+.range-slider__input {
+    width: 300px;
+}

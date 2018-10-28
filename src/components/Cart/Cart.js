@@ -31,3 +31,5 @@ class Cart extends Component {
 }
 
 export default Cart;
+
+//The class component displays the number of items purchased, as well as the sum of all purchases.

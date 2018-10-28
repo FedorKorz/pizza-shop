@@ -1,21 +1,22 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 import { Route, Switch } from 'react-router-dom';
-import Table from '../components/Main/Table/Table';
+import styles from './wrapped-selling-items.css';
 
 const HOC = (Component) => {
 
-  class HOC extends Component {
+  class HOC extends React.Component {
     render() {
       return (
           <Switch>
             <Route exact path = { this.props.route }>
               <div>
                 <Header />
-                <Component />
+                <div class = 'container'>
+                  <Component />     
+                </div>
                 <Footer />
-                <Table />
               </div>
             </Route>
           </Switch>
@@ -26,3 +27,5 @@ const HOC = (Component) => {
 };
 
 export default HOC;
+
+// Class component, wrapper, created to avoid duplication of switch / router and also to control the route.

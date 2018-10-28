@@ -1,9 +1,11 @@
 .selling-item {
     width: 500px;
-    margin: 10px;
+    padding-top: 20px; 
     box-shadow: 1px 1px 2px 2px #F0F0F0;
     cursor: pointer;
     border-radius: 10px 10px;
+    height: 700px;
+    margin: 20px;
 }
 
 .selling-item:hover {
@@ -23,12 +25,12 @@
     text-align: center;
 }
 
-.selling-item__buttons {
+.selling-item-buttons {
     display: flex;
     justify-content: center;
 }
 
-.selling-item__buttons button {
+.selling-item-buttons button {
     border: none;
     height: 50px;
     width: 80px;
@@ -38,11 +40,11 @@
     outline: none;
 }
 
-.selling-item__buttons button:first-child {
+.selling-item-buttons button:first-child {
     border-radius: 30px 0px 0px 30px;
 }
 
-.selling-item__buttons button:last-child {
+.selling-item-buttons button:last-child {
     border-radius: 0px 30px 30px 0px;
 }
 
@@ -51,7 +53,7 @@
     width: 77%;
 }
 
-.pizza-item__add-to-cart {
+.pizza-item-add-to-cart {
     margin: 50px auto;
     background: #DE101D;
     color: #F0F0F0;
@@ -69,56 +71,20 @@
     width: 250px;
 }
 
-.dought-type {    
-    text-align: center;
-}
-
-.dought-type button {    
-    border: none;
-    height: 40px;
-    width: 180px;
-    font-size: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: #4D4D4D;
-    outline: none;
-}
-
-.dought-type button:hover {
-    background: #F3F3F3;    
-    border: #F0F0F0;
-    outline: none;
-    color: #A52A2A;
-}
-
-.pizza-item__price {
+.item-price {
     font-size: 25px;
     font-weight: bold; 
     color: #A52A2A; 
 }
 
-.pizza-item__price-rub {
+.item-price-rub {
     font-weight: bold;
     font-size: 20px;
     margin-right: 15px;
 }
 
-.pizza-items {
-    display: inline-flex;
-}
-
-.pizza-item__add-to-cart:active {
+.pizza-item-add-to-cart:active {
     background: #000000;
-}
-
-
-
-.pizza-item__dought-type button:first-child {
-    border-radius: 30px 0 0 30px;
-}
-
-.pizza-item__dought-type button:last-child {
-    border-radius: 0 30px 30px 0;
 }
 
 .nutrial-value {
@@ -130,7 +96,7 @@
     left: 250px;    
     height: 25px;
     width: 20px;
-    /* background: url('./assets/menu.svg') 0px 0px; */
+    background: url('../../../../assets/selling-tems/icons/menu.svg') 0px 0px;
     cursor: pointer;
 }
 

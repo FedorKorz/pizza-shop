@@ -119,3 +119,32 @@ h3 {
   z-index: 100;
   right: 40px !important;
 }
+
+.main-slider:active {
+  border: none;
+}
+
+.main-slider button:hover {
+  background: none;
+}
+
+.slick-slide img {
+  border: none !important;    
+}
+
+.slick-slide img:active {
+  border: none !important;    
+}
+
+.slick-next:before {
+  content: url('../../../../assets/slider/slider-arrows/arrow-next.svg') !important;
+}
+
+.slick-prev:before {
+  content: url('../../../../assets/slider/slider-arrows/arrow-next.svg') !important;
+}
+
+.slick-prev {
+  transform: rotate(180deg) !important;
+  margin-top: -7px;
+}

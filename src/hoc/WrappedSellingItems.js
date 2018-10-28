@@ -3,6 +3,7 @@ import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 import { Route, Switch } from 'react-router-dom';
 import SellingItems from '../components/Main/Goods/SellingItems';
+import styles from './wrapped-selling-items.css'
 
 const HOC = () => {
 
@@ -13,7 +14,9 @@ const HOC = () => {
             <Route exact path = { this.props.route }>
               <div>
                 <Header />
-                <SellingItems state = { this.props.state } />
+                <div className = 'container'>
+                  <SellingItems state = { this.props.state } />
+                </div>
                 <Footer />
               </div>
             </Route>

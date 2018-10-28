@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './range-slider.css';
 
 const RangeSlider = (props) => {
     return (
@@ -10,8 +11,7 @@ const RangeSlider = (props) => {
                 max="1000" 
                 step="10" 
                 value={props.priceRange}  
-                onChange={props.shifted} 
-            />
+                onChange={props.shifted}/>
         </div>
     ); 
 }

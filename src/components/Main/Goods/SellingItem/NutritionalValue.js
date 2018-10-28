@@ -20,3 +20,5 @@ const nutritionalValue = (props) => {
 };
 
 export default nutritionalValue;
+
+// The functional component, a small tooltip, shows the composition of each of the products.

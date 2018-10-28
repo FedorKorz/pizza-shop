@@ -41,37 +41,40 @@ class SellingItem extends Component {
 
     render() {
         return ( 
-                <div className = 'selling-item'>
-                    <section>
-                        <h2 className = 'title'>{this.props.title}</h2>
-                        <p className = 'consists' >{this.props.consists}</p>
+            <div className = 'selling-item'>
+                <section>
+                    <h2 className = 'title'>{this.props.title}</h2>
+                    <p className = 'consists' >{this.props.consists}</p>
 
-                        { this.props.type === 'pizza' || this.props.type === 'drinks' ? (<div className = 'selling-item__buttons'> 
-                            {this.buttonSizeGood(0)}
-                            {this.buttonSizeGood(1)}
-                            {this.buttonSizeGood(2)}
-                        </div>) :[] }
+                    { this.props.type === 'pizza' || this.props.type === 'drinks' ? (<div className = 'selling-item-buttons'> 
+                        {this.buttonSizeGood(0)}
+                        {this.buttonSizeGood(1)}
+                        {this.buttonSizeGood(2)}
+                    </div>) :[] }
+                    
+                    <div className = 'displayed-img'>
+                        <img src = {this.state.currentDisplayedImg} alt='item' width = '300px' /> 
+                    </div>
+
+                    <NutritionalValue
+                        nutritionalValue = {this.props.nutritionalValue} />
                         
-                        { this.props.type === 'pizza' ? (
-                            <div className = 'dought-type'>
-                                <button>Традиционное</button>
-                                <button>Тонкое</button>
-                            </div>) : [] }
-
-                        <div className = 'displayed-img'>
-                            <img src = {this.state.currentDisplayedImg} alt='item' width = '300px' /> 
-                        </div>
-
-                        <NutritionalValue
-                            nutritionalValue = {this.props.nutritionalValue} />
-                            
-                        <div className = 'bottom-wrapper'>
-                            <span className = 'pizza-item__price'>{`${this.state.currentPrice}`}</span> 
-                            <span className = 'pizza-item__price-rub'>₽</span>
-                            <button className = 'pizza-item__add-to-cart' onClick = {() => this.addToCart(this.state.currentPrice)}>В корзину</button>
-                        </div> 
-                    </section>
-                </div>
+                    <div className = 'bottom-wrapper'>
+                        <span className = 'item-price'>
+                            {`${this.state.currentPrice}`}
+                        </span> 
+                        <span 
+                            className = 'item-price-rub'>
+                            ₽
+                        </span>
+                        <button 
+                            className = 'pizza-item-add-to-cart' 
+                            onClick = {() => this.addToCart(this.state.currentPrice)}>
+                            В корзину
+                        </button>
+                    </div> 
+                </section>
+            </div>
         );
     };
 };
@@ -85,3 +88,8 @@ function mapDispatchToProps(dispatch) {
 }
   
 export default connect(mapStateToProps, mapDispatchToProps)(SellingItem);
+
+// A generic class component that retrieves data from index.js. 
+// The data itself is stored in a /store. Depending on the data received, 
+// either pizza or drinks or combos. Also, the component interacts with the redux-store. 
+// AddItToCard, AddPhrisCard add-on actions and change redux store via MapDispacProps method.

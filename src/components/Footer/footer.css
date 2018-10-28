@@ -1,0 +1,47 @@
+
+.footer {
+    min-height: 500px;
+    background: #373535;
+}
+
+.footer__info {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer__info h2 {
+    color: #ffffff;
+}
+
+.footer__info ul:first-child {
+    margin-left: 50px;
+}
+
+.footer__info ul li {
+    list-style-type: none;
+    color: grey;
+    padding: 5px;
+}
+
+.footer__info ul li a {
+    list-style-type: none;
+    color: grey;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.footer__info ul li a:hover {
+    color: #ffffff;
+}
+
+.feedback {
+    margin-top: 50px;
+    margin-left: 120px;
+    color: #ffffff;
+}
+
+.feedback .telephone {
+    text-decoration: none;
+    font-size: 33px;
+    color: #ffffff;
+}
