@@ -103,5 +103,6 @@ pizza-shop
 -----------------------------------
 * npm install
 * npm start
+* npm i react-css-modules
 
 ![](https://i.imgur.com/23MffJn.gif)
