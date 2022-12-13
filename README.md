@@ -1,10 +1,9 @@
 pizza-shop
 =====================
 
-Проект на react+redux. Небольшой сайт-приложение для продажи пицц и всего такого. В redux сторе хранятся данные о количестве заказаных единиц товаров и общая стоимость. Также использовал css-modules, routing и hoc.
+The project is based on react+redux. A small website-application for selling pizzas and all that. The redux store stores data on the number of ordered units of goods and the total cost. I also used css-modules, routing and hoc.
 
-
-Структура проекта. 
+Structure 
 -----------------------------------
 ```
 ├── src
@@ -94,7 +93,7 @@ pizza-shop
 
 
 ```
-Список использованных технологий
+Used technology
 -----------------------------------
 * react
 * redux
