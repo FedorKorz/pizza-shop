@@ -98,7 +98,7 @@ Used technology
 * react
 * redux
 
-Установка
+How to run
 -----------------------------------
 * npm install
 * npm start
